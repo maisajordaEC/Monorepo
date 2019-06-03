@@ -19,9 +19,9 @@ def import_tutorkit
     pod 'ECTutorKit', :path => "ECTutorKit"
 end
 
-def import_loginkit
-    pod 'ECLoginKit', :path => "ECLoginKit"
-end
+#def import_loginkit
+#   pod 'ECLoginKit', :path => "ECLoginKit"
+#end
 
 target 'ECCoreKit' do
 project 'ECCoreKit/ECCoreKit.xcodeproj'
@@ -38,12 +38,12 @@ project 'ECTutorKit/ECTutorKit.xcodeproj'
 import_corekit
 end
 
-target 'ECLoginKit' do
-project 'ECLoginKit/ECLoginKit.xcodeproj'
+#target 'ECLoginKit' do
+#project 'ECLoginKit/ECLoginKit.xcodeproj'
 # Pods for CoreKit
 # ...
-import_corekit
-end
+#import_corekit
+#end
 
 target 'EnglishCentralApp' do
 project 'EnglishCentralApp/EnglishCentralApp.xcodeproj'
@@ -51,7 +51,7 @@ project 'EnglishCentralApp/EnglishCentralApp.xcodeproj'
 # Pods for EnglishCentralApp
 import_corekit
 import_tutorkit
-import_loginkit
+#import_loginkit
 end
 
   target 'EnglishCentralAppTests' do
