@@ -3,8 +3,8 @@ Pod::Spec.new do |spec|
 # Configuration.
 spec.name = "ECTutorKit"
 spec.version = "1.0"
-spec.summary = "Login SDK"
-spec.homepage = "https://github.com/maisajordaEC/ECTutorKit"
+spec.summary = "Tutor SDK"
+spec.homepage = "https://github.com/maisajordaEC/Monorepo"
 spec.platform = :ios
 spec.requires_arc = true
 spec.ios.deployment_target = "9.0"
@@ -14,7 +14,7 @@ spec.license = {
 :text => "Copyright (c) 2016 EnglishCentral, Inc. All rights reserved."
 }
 spec.source        = {
-:git => "https://github.com/maisajordaEC/ECTutorKit.git",
+:git => "https://github.com/maisajordaEC/Monorepo.git",
 :tag => "#{spec.version}.LOCAL"
 }
 
