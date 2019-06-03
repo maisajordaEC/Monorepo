@@ -1,0 +1,4 @@
+module NewRelicAgent {  
+  header "../NewRelic.h"
+  export *
+}
