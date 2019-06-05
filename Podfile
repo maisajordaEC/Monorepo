@@ -27,7 +27,7 @@
     # Pods for TutorKit
     import_tutorkit
 
-    # Private pods
+    # Local pods
     import_corekit
   end
 
@@ -36,7 +36,7 @@
 
     # Pods for EnglishCentralApp
  
-    # Private pods
+    # Local pods
     import_corekit
     import_tutorkit
   end
