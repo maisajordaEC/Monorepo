@@ -17,6 +17,7 @@ spec.source        = {
 :git => "https://github.com/maisajordaEC/Monorepo.git",
 :tag => "#{spec.version}.LOCAL"
 }
+spec.frameworks = "NewRelicAgent", "MBProgressHUD"
 
 # All Supported iOS Dependencies.
 spec.ios.dependency 'MBProgressHUD', '1.0.0'

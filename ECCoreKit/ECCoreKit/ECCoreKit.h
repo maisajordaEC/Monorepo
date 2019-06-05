@@ -15,4 +15,6 @@ FOUNDATION_EXPORT double ECCoreKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char ECCoreKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ECCoreKit/PublicHeader.h>
-
+//#import <NewRelicAgent/NewRelic.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+//#import <ECCoreKit/ObjC.h>

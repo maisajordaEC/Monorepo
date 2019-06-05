@@ -9,6 +9,6 @@
 #ifndef EnglishCentralApp_Bridging_Header_h
 #define EnglishCentralApp_Bridging_Header_h
 
-#import <NewRelicAgent/NewRelic.h>
+//#import <NewRelicAgent/NewRelic.h>
 
 #endif /* EnglishCentralApp_Bridging_Header_h */

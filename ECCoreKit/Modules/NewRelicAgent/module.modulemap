@@ -1,0 +1,4 @@
+module NewRelicAgent {
+  header "../../../Pods/NewRelicAgent/NewRelicAgent/NewRelicAgent.framework/Headers/NewRelic.h"
+  export *
+}

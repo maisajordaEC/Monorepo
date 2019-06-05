@@ -1,0 +1,5 @@
+module WebViewJavascriptBridge {
+  header "WebViewJavascriptBridge.h"
+  header "WKWebViewJavascriptBridge.h"
+  export *
+}

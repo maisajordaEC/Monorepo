@@ -1,0 +1,4 @@
+module OAuthCore {
+  header "OAuthCore.h"
+  export *
+}

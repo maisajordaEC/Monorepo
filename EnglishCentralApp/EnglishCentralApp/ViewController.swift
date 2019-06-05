@@ -11,6 +11,8 @@ import MBProgressHUD
 import UIImage_PDF
 import ECCoreKit
 import ECTutorKit
+import GoogleAnalytics
+import NewRelicAgent
 
 class ViewController: UIViewController {
 

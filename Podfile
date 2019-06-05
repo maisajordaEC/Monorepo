@@ -1,58 +1,45 @@
-# Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
-
-
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  platform :ios, '9.0'
   use_frameworks!
 
-  # Pods for EnglishCentralApp
-workspace 'ECWorkspace'
-project 'ECCoreKit/ECCoreKit.xcodeproj'
-project 'ECTutorKit/ECTutorKit.xcodeproj'
-project 'EnglishCentralApp/EnglishCentralApp.xcodeproj'
+  workspace 'ECWorkspace'
+  project 'ECCoreKit/ECCoreKit.xcodeproj'
+  project 'ECTutorKit/ECTutorKit.xcodeproj'
+  project 'EnglishCentralApp/EnglishCentralApp.xcodeproj'
 
-def import_corekit
-pod 'ECCoreKit', :path => "ECCoreKit"
-end
+  def import_corekit
+    pod 'ECCoreKit', :path => "ECCoreKit"
+  end
 
-def import_tutorkit
+  def import_tutorkit
     pod 'ECTutorKit', :path => "ECTutorKit"
-end
+  end
 
-#def import_loginkit
-#   pod 'ECLoginKit', :path => "ECLoginKit"
-#end
+  target 'ECCoreKit' do
+     project 'ECCoreKit/ECCoreKit.xcodeproj'
 
-target 'ECCoreKit' do
-project 'ECCoreKit/ECCoreKit.xcodeproj'
-# Pods for CoreKit
-# ...
-end
+     # Pods for CoreKit
+     import_corekit
+  end
 
-target 'ECTutorKit' do
-project 'ECTutorKit/ECTutorKit.xcodeproj'
-# Pods for TutorKit
-# ...
+  target 'ECTutorKit' do
+    project 'ECTutorKit/ECTutorKit.xcodeproj'
 
-# Relies on Core Kit
-import_corekit
-end
+    # Pods for TutorKit
+    import_tutorkit
 
-#target 'ECLoginKit' do
-#project 'ECLoginKit/ECLoginKit.xcodeproj'
-# Pods for CoreKit
-# ...
-#import_corekit
-#end
+    # Private pods
+    import_corekit
+  end
 
-target 'EnglishCentralApp' do
-project 'EnglishCentralApp/EnglishCentralApp.xcodeproj'
+  target 'EnglishCentralApp' do
+    project 'EnglishCentralApp/EnglishCentralApp.xcodeproj'
 
-# Pods for EnglishCentralApp
-import_corekit
-import_tutorkit
-#import_loginkit
-end
+    # Pods for EnglishCentralApp
+ 
+    # Private pods
+    import_corekit
+    import_tutorkit
+  end
 
   target 'EnglishCentralAppTests' do
     inherit! :search_paths

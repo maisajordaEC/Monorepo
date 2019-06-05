@@ -1,0 +1,4 @@
+module RNCryptor {
+  header "RNCryptor.h"
+  export *
+}

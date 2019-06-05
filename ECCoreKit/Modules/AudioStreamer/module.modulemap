@@ -1,0 +1,4 @@
+module AudioStreamer {
+  header "AudioStreamer.h"
+  export *
+}

@@ -8,7 +8,9 @@
 
 import UIKit
 import MBProgressHUD
+import UIImage_PDF
 import ECCoreKit
+import GoogleAnalytics
 
 public class ECLesson: NSObject {
     
@@ -20,5 +22,6 @@ public class ECLesson: NSObject {
     
     public init(user: ECUser) {
         currentUser = user
+        GAI.sharedInstance()?.logger.logLevel = .warning
     }
 }

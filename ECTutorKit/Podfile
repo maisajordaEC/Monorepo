@@ -8,6 +8,7 @@ target 'ECTutorKit' do
   # Pods for ECTutorKit
   pod 'MBProgressHUD', '1.0.0'
   pod 'UIImage+PDF', '1.1.3'
+  pod 'GoogleAnalytics'
 
   target 'ECTutorKitTests' do
     inherit! :search_paths
