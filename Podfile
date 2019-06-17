@@ -42,7 +42,7 @@
     import_tutorkit
   end
 
-  target 'MyEnglish' do
+  target 'MyEnglishApp' do
     puts "Installing MyEnglish (VNPT)"
     # Pods for MyEnglish
  
