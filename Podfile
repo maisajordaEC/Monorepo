@@ -34,11 +34,20 @@
   target 'EnglishCentralApp' do
     project 'EnglishCentralApp/EnglishCentralApp.xcodeproj'
 
+    puts "Installing EnglishCentralApp"
     # Pods for EnglishCentralApp
  
     # Local pods
     import_corekit
     import_tutorkit
+  end
+
+  target 'MyEnglish' do
+    puts "Installing MyEnglish (VNPT)"
+    # Pods for MyEnglish
+ 
+    # Local pods
+    import_corekit
   end
 
   target 'EnglishCentralAppTests' do

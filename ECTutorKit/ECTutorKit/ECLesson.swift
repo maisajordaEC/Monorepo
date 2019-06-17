@@ -12,7 +12,7 @@ import UIImage_PDF
 import ECCoreKit
 import GoogleAnalytics
 
-public class ECLesson: NSObject {
+public class ECLesson: NSObject, ECTutorKitProtocol {
     
     var currentUser: ECUser
     
@@ -24,4 +24,20 @@ public class ECLesson: NSObject {
         currentUser = user
         GAI.sharedInstance()?.logger.logLevel = .warning
     }
+    
+    public func isTutorKitAvailable() -> Bool {
+        return true;
+    }
+    
+    // MARK: - ECTutorKit Protocol Methods
+    
+    public func showMyLessons() {
+        print("================= Showing MyLessons =================")
+    }
+    
+    public func showScheduler() {
+        print("================= Showing Scheduler =================")
+    }
+    
 }
+

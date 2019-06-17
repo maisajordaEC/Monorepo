@@ -9,8 +9,8 @@
 import UIKit
 import MBProgressHUD
 import UIImage_PDF
-import ECCoreKit
 import ECTutorKit
+import ECCoreKit
 import GoogleAnalytics
 import NewRelicAgent
 
@@ -25,9 +25,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.user.logUser()
+
+        var tutorKit:ECTutorKitProtocol?
+        let tutorKitRequired:NSString = Bundle.main.infoDictionary?["isTutorKitRequired"] as! NSString
+        if tutorKitRequired.boolValue {
+            tutorKit = ECLesson.init(user: self.user)
+        }
         
-        let lesson = ECLesson.init(user: self.user)
-        lesson.log()
+        tutorKit?.showScheduler()
+        tutorKit?.showMyLessons()
+        
         
         // NewRelic
         NewRelic.recordMetric(withName: "MetricName", category: "MetricCategory")
@@ -39,4 +46,3 @@ class ViewController: UIViewController {
         ageLabel.text = "\(user.age)"
     }
 }
-
