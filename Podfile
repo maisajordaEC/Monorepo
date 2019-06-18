@@ -39,15 +39,16 @@
  
     # Local pods
     import_corekit
-    import_tutorkit
+    #import_tutorkit
   end
 
-  target 'MyEnglishApp' do
+  target 'MyEnglish' do
     puts "Installing MyEnglish (VNPT)"
     # Pods for MyEnglish
  
     # Local pods
     import_corekit
+
   end
 
   target 'EnglishCentralAppTests' do

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BB1C4A1E22B7A3C2009A0CDC"
-               BuildableName = "MyEnglishApp.app"
-               BlueprintName = "MyEnglishApp"
+               BlueprintIdentifier = "BB1B828D22A4EAAB00B41704"
+               BuildableName = "EnglishCentralApp.app"
+               BlueprintName = "EnglishCentralApp"
                ReferencedContainer = "container:EnglishCentralApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,13 +28,23 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BB1B82A422A4EAAD00B41704"
+               BuildableName = "EnglishCentralAppTests.xctest"
+               BlueprintName = "EnglishCentralAppTests"
+               ReferencedContainer = "container:EnglishCentralApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BB1C4A1E22B7A3C2009A0CDC"
-            BuildableName = "MyEnglishApp.app"
-            BlueprintName = "MyEnglishApp"
+            BlueprintIdentifier = "BB1B828D22A4EAAB00B41704"
+            BuildableName = "EnglishCentralApp.app"
+            BlueprintName = "EnglishCentralApp"
             ReferencedContainer = "container:EnglishCentralApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +65,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BB1C4A1E22B7A3C2009A0CDC"
-            BuildableName = "MyEnglishApp.app"
-            BlueprintName = "MyEnglishApp"
+            BlueprintIdentifier = "BB1B828D22A4EAAB00B41704"
+            BuildableName = "EnglishCentralApp.app"
+            BlueprintName = "EnglishCentralApp"
             ReferencedContainer = "container:EnglishCentralApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +84,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BB1C4A1E22B7A3C2009A0CDC"
-            BuildableName = "MyEnglishApp.app"
-            BlueprintName = "MyEnglishApp"
+            BlueprintIdentifier = "BB1B828D22A4EAAB00B41704"
+            BuildableName = "EnglishCentralApp.app"
+            BlueprintName = "EnglishCentralApp"
             ReferencedContainer = "container:EnglishCentralApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

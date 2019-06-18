@@ -4,25 +4,40 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>EnglishCentralApp copy.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
-		</dict>
 		<key>EnglishCentralApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>0</integer>
 		</dict>
-		<key>MyEnglishApp.xcscheme_^#shared#^_</key>
+		<key>MyEnglish.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>BB1B828D22A4EAAB00B41704</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB1B82A422A4EAAD00B41704</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BB1C4A1E22B7A3C2009A0CDC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB1C4A3122B7B8AB009A0CDC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB21DC0E22B8F092001FD111</key>
 		<dict>
 			<key>primary</key>
 			<true/>

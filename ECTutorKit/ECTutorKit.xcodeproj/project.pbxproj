@@ -429,8 +429,6 @@
 					"\"MBProgressHUD\"",
 					"-framework",
 					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIImage_PDF\"",
 					"-weak_framework",
 					ECCoreKit,
 				);
@@ -478,8 +476,6 @@
 					"\"MBProgressHUD\"",
 					"-framework",
 					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIImage_PDF\"",
 					"-weak_framework",
 					ECCoreKit,
 				);

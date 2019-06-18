@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import MBProgressHUD
-import UIImage_PDF
-import ECTutorKit
+
 import ECCoreKit
-import GoogleAnalytics
+import ECTutorKit
 import NewRelicAgent
+import GoogleAnalytics
+//import UIImage_PDF
 
 class ViewController: UIViewController {
 
@@ -25,16 +25,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.user.logUser()
-
+        
         var tutorKit:ECTutorKitProtocol?
-        let tutorKitRequired:NSString = Bundle.main.infoDictionary?["isTutorKitRequired"] as! NSString
+        let tutorKitRequired:NSString = Bundle.main.infoDictionary?["ECTutor Enabled"] as! NSString
+        print("TUTOR KIT ENABLED = \(tutorKitRequired)")
         if tutorKitRequired.boolValue {
             tutorKit = ECLesson.init(user: self.user)
         }
-        
+
         tutorKit?.showScheduler()
         tutorKit?.showMyLessons()
-        
         
         // NewRelic
         NewRelic.recordMetric(withName: "MetricName", category: "MetricCategory")
@@ -44,5 +44,14 @@ class ViewController: UIViewController {
         usernameLabel.text = user.username
         emailAddressLabel.text = user.emailAddress
         ageLabel.text = "\(user.age)"
+    }
+    
+    func logAllFrameworks() {
+        for bundle in Bundle.allFrameworks {
+            print(bundle.bundlePath)
+//            if ((bundle.classNamed("SKStoreProductViewController")) != nil) {
+//                return true;
+//            }
+        }
     }
 }

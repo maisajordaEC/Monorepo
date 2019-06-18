@@ -8,9 +8,12 @@
 
 import UIKit
 import MBProgressHUD
-import UIImage_PDF
+//import UIImage_PDF
 import ECCoreKit
 import GoogleAnalytics
+
+// Import static framework from Pods
+import NewRelicAgent
 
 public class ECLesson: NSObject, ECTutorKitProtocol {
     
@@ -23,6 +26,10 @@ public class ECLesson: NSObject, ECTutorKitProtocol {
     public init(user: ECUser) {
         currentUser = user
         GAI.sharedInstance()?.logger.logLevel = .warning
+        
+        // NewRelic
+        NewRelic.recordMetric(withName: "MetricName", category: "MetricCategory")
+
     }
     
     public func isTutorKitAvailable() -> Bool {

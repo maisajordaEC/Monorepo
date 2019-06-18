@@ -10,8 +10,6 @@ import UIKit
 import MBProgressHUD
 import SwiftyJSON
 
-// Import static framework from Pods
-import NewRelicAgent
 
 // Import manually added frameworks
 import AudioStreamer
@@ -31,9 +29,6 @@ public class ECUser: NSObject {
         self.username = name
         self.emailAddress = email
         self.age = age
-
-        // NewRelic
-        NewRelic.recordMetric(withName: "MetricName", category: "MetricCategory")
     }
     
     public func logUser() {

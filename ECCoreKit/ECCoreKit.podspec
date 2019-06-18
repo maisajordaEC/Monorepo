@@ -20,7 +20,6 @@ spec.source        = {
 
 # All Supported iOS Dependencies.
 spec.ios.dependency 'MBProgressHUD', '1.0.0'
-spec.ios.dependency 'NewRelicAgent', '6.5.0'
 spec.ios.dependency 'SwiftyJSON', '~> 4.0'
 
 end
